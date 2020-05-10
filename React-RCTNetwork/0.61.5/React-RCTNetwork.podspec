@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
   s.author                 = "Facebook, Inc. and its affiliates"
   s.platforms              = { :ios => "9.0", :tvos => "9.2" }
   s.source                 = source
-  s.source_files           = "#{version}/react-native/Libraries/RCTNetwork/*.{m,mm}"
+  s.source_files           = "#{version}/react-native/Libraries/Network/*.{m,mm}"
   s.preserve_paths         = "package.json", "LICENSE", "LICENSE-docs"
   s.header_dir             = "RCTNetwork"
 
