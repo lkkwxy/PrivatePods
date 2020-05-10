@@ -20,18 +20,18 @@ folly_version = '2018.10.22.00'
 boost_compiler_flags = '-Wno-documentation'
 
 header_subspecs = {
-  'ARTHeaders'                  => '#{version}/react-native/Libraries/ART/**/*.h',
-  'CoreModulesHeaders'          => '#{version}/react-native/React/CoreModules/**/*.h',
-  'RCTActionSheetHeaders'       => 'Libraries/ActionSheetIOS/*.h',
-  'RCTAnimationHeaders'         => '#{version}/react-native/Libraries/NativeAnimation/{Drivers/*,Nodes/*,*}.{h}',
-  'RCTBlobHeaders'              => '#{version}/react-native/Libraries/Blob/{RCTBlobManager,RCTFileReaderModule}.h',
-  'RCTImageHeaders'             => '#{version}/react-native/Libraries/Image/*.h',
+  'ARTHeaders'                  => "#{version}/react-native/Libraries/ART/**/*.h",
+  'CoreModulesHeaders'          => "#{version}/react-native/React/CoreModules/**/*.h",
+  'RCTActionSheetHeaders'       => "#{version}/react-native/Libraries/ActionSheetIOS/*.h",
+  'RCTAnimationHeaders'         => "#{version}/react-native/Libraries/NativeAnimation/{Drivers/*,Nodes/*,*}.{h}",
+  'RCTBlobHeaders'              => "#{version}/react-native/Libraries/Blob/{RCTBlobManager,RCTFileReaderModule}.h",
+  'RCTImageHeaders'             => "#{version}/react-native/Libraries/Image/*.h",
   'RCTLinkingHeaders'           => "#{version}/react-native/Libraries/LinkingIOS/*.h",
-  'RCTNetworkHeaders'           => '#{version}/react-native/Libraries/Network/*.h',
-  'RCTPushNotificationHeaders'  => '#{version}/react-native/Libraries/PushNotificationIOS/*.h',
-  'RCTSettingsHeaders'          => '#{version}/react-native/Libraries/Settings/*.h',
+  'RCTNetworkHeaders'           => "#{version}/react-native/Libraries/Network/*.h",
+  'RCTPushNotificationHeaders'  => "#{version}/react-native/Libraries/PushNotificationIOS/*.h",
+  'RCTSettingsHeaders'          => "#{version}/react-native/Libraries/Settings/*.h",
   'RCTTextHeaders'              => "#{version}/react-native/Libraries/Text/**/*.h",
-  'RCTVibrationHeaders'         => '#{version}/react-native/Libraries/Vibration/*.h',
+  'RCTVibrationHeaders'         => "#{version}/react-native/Libraries/Vibration/*.h",
 }
 
 Pod::Spec.new do |s|
