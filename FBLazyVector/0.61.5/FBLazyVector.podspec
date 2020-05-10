@@ -14,12 +14,12 @@ package = {
 version = package['version']
 
 source = { :git => 'https://github.com/lkkwxy/ReactNative.git' }
-if version == '1000.0.0'
-  # This is an unpublished version, use the latest commit hash of the react-native repo, which we’re presumably in.
-  source[:commit] = `git rev-parse HEAD`.strip
-else
-  source[:tag] = "v#{version}"
-end
+# if version == '1000.0.0'
+#   # This is an unpublished version, use the latest commit hash of the react-native repo, which we’re presumably in.
+#   source[:commit] = `git rev-parse HEAD`.strip
+# else
+#   source[:tag] = "v#{version}"
+# end
 
 Pod::Spec.new do |s|
   s.name                   = "FBLazyVector"
