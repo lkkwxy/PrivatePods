@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
   s.platforms              = { :ios => "9.0", :tvos => "9.2" }
   s.source                 = source
   # RCTBlobCollector.h is not included in the React module as it has C++ code
-  s.source_files           = "#{version}/react-native/Libraries/Blob/*.{m,mm}", "#{version}/react-native/Libraries/RCTBlob/RCTBlobCollector.h"
+  s.source_files           = "#{version}/react-native/Libraries/Blob/*.{m,mm}", "#{version}/react-native/Libraries/Blob/RCTBlobCollector.h"
   s.preserve_paths         = "package.json", "LICENSE", "LICENSE-docs"
   s.header_dir             = "RCTBlob"
 
