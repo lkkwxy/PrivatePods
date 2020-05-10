@@ -31,5 +31,5 @@ Pod::Spec.new do |s|
   s.platforms              = { :ios => "9.0", :tvos => "9.2" }
   s.source                 = source
   s.source_files           = "#{version}/react-native/Libraries/RCTRequired/**/*.{c,h,m,mm,cpp}"
-  s.header_dir             = "#{version}/react-native/Libraries/RCTRequired"
+  s.header_dir             = "RCTRequired"
 end

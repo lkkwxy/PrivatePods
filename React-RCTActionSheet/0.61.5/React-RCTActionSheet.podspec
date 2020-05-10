@@ -27,7 +27,7 @@ Pod::Spec.new do |s|
   s.source                 = source
   s.source_files           = "#{version}/react-native/Libraries/RCTActionSheet/*.{m}"
   s.preserve_paths          = "package.json", "LICENSE", "LICENSE-docs"
-  s.header_dir             = "#{version}/react-native/Libraries/RCTActionSheet"
+  s.header_dir             = "RCTActionSheet"
 
   s.dependency "React-Core/RCTActionSheetHeaders", version
 end

@@ -35,7 +35,7 @@ Pod::Spec.new do |s|
   s.compiler_flags         = folly_compiler_flags + ' -Wno-nullability-completeness'
   s.source                 = source
   s.source_files           = "#{version}/react-native/Libraries/FBReactNativeSpec/**/*.{c,h,m,mm,cpp}"
-  s.header_dir             = "#{version}/react-native/Libraries/FBReactNativeSpec"
+  s.header_dir             = "FBReactNativeSpec"
 
   s.pod_target_xcconfig    = {
                                "USE_HEADERMAP" => "YES",

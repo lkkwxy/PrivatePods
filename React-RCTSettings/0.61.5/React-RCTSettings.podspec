@@ -27,7 +27,7 @@ Pod::Spec.new do |s|
   s.source                 = source
   s.source_files           = "#{version}/react-native/Libraries/RCTSettings*.{m}"
   s.preserve_paths         = "package.json", "LICENSE", "LICENSE-docs"
-  s.header_dir             = "#{version}/react-native/Libraries/RCTSettings"
+  s.header_dir             = "RCTSettings"
 
   s.dependency "React-Core/RCTSettingsHeaders", version
 end

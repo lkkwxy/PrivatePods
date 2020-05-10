@@ -27,7 +27,7 @@ Pod::Spec.new do |s|
   s.source                 = source
   s.source_files           = "#{version}/react-native/Libraries/RCTVibration/*.{m}"
   s.preserve_paths         = "package.json", "LICENSE", "LICENSE-docs"
-  s.header_dir             = "#{version}/react-native/Libraries/RCTVibration"
+  s.header_dir             = "RCTVibration"
 
   s.dependency "React-Core/RCTVibrationHeaders", version
 end

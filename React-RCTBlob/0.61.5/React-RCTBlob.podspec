@@ -27,7 +27,7 @@ Pod::Spec.new do |s|
   # RCTBlobCollector.h is not included in the React module as it has C++ code
   s.source_files           = "#{version}/react-native/Libraries/RCTBlob/*.{m,mm}", "#{version}/react-native/Libraries/RCTBlob/RCTBlobCollector.h"
   s.preserve_paths         = "package.json", "LICENSE", "LICENSE-docs"
-  s.header_dir             = "#{version}/react-native/Libraries/RCTBlob"
+  s.header_dir             = "RCTBlob"
 
   s.dependency "React-Core/RCTBlobHeaders", version
   s.dependency "React-Core/RCTWebSocket", version

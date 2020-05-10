@@ -29,7 +29,7 @@ Pod::Spec.new do |s|
   s.compiler_flags         = folly_compiler_flags + ' -Wno-nullability-completeness'
   s.source                 = source
   s.source_files           = "#{version}/react-native/Libraries/CoreModules/**/*.{c,m,mm,cpp}"
-  s.header_dir             = "#{version}/react-native/Libraries/CoreModules"
+  s.header_dir             = "CoreModules"
   s.pod_target_xcconfig    = {
                                "USE_HEADERMAP" => "YES",
                                "CLANG_CXX_LANGUAGE_STANDARD" => "c++14",

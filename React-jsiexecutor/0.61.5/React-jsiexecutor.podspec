@@ -32,7 +32,7 @@ Pod::Spec.new do |s|
   s.source_files           = "#{version}/react-native/ReactCommon/jsireact/*.{cpp,h}"
   s.compiler_flags         = folly_compiler_flags + ' ' + boost_compiler_flags
   s.pod_target_xcconfig    = { "HEADER_SEARCH_PATHS" => "\"$(PODS_ROOT)/boost-for-react-native\" \"$(PODS_ROOT)/Folly\" \"$(PODS_ROOT)/DoubleConversion\"" }
-  s.header_dir             = "#{version}/react-native/ReactCommon/jsireact"
+  s.header_dir             = "jsireact"
 
   s.dependency "React-cxxreact", version
   s.dependency "React-jsi", version

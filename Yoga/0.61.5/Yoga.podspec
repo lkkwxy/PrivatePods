@@ -29,7 +29,7 @@ Pod::Spec.new do |spec|
   spec.source = source
 
   spec.module_name = 'yoga'
-  spec.header_dir = '#{version}/react-native/ReactCommon/yoga'
+  spec.header_dir = 'yoga'
   spec.requires_arc = false
   spec.compiler_flags = [
       '-fno-omit-frame-pointer',

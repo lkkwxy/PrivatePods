@@ -27,7 +27,7 @@ Pod::Spec.new do |s|
   s.source                 = source
   s.source_files           = "#{version}/react-native/Libraries/RCTLinking/*.{m}"
   s.preserve_paths         = "package.json", "LICENSE", "LICENSE-docs"
-  s.header_dir             = "#{version}/react-native/Libraries/RCTLinking"
+  s.header_dir             = "RCTLinking"
 
   s.dependency "React-Core/RCTLinkingHeaders", version
 end

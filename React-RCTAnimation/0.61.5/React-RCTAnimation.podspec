@@ -26,7 +26,7 @@ Pod::Spec.new do |s|
   s.source                 = source
   s.source_files           = "#{version}/react-native/Libraries/RCTAnimation/{Drivers/*,Nodes/*,*}.{m}"
   s.preserve_paths         = "package.json", "LICENSE", "LICENSE-docs"
-  s.header_dir             = "#{version}/react-native/Libraries/RCTAnimation"
+  s.header_dir             = "RCTAnimation"
 
   s.dependency "React-Core/RCTAnimationHeaders", version
 end

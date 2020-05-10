@@ -31,6 +31,6 @@ Pod::Spec.new do |s|
   s.platforms              = { :ios => "9.0", :tvos => "9.2" }
   s.source                 = source
   s.source_files           = "#{version}/react-native/Libraries/FBLazyVector/**/*.{c,h,m,mm,cpp}"
-  s.header_dir             = "#{version}/react-native/Libraries/FBLazyVector/FBLazyVector"
+  s.header_dir             = "FBLazyVector"
 
 end

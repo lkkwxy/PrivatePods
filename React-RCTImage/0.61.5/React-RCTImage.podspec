@@ -27,7 +27,7 @@ Pod::Spec.new do |s|
   s.source                 = source
   s.source_files           = "#{version}/react-native/Libraries/RCTImage/*.{m}"
   s.preserve_paths         = "package.json", "LICENSE", "LICENSE-docs"
-  s.header_dir             = "#{version}/react-native/Libraries/RCTImage"
+  s.header_dir             = "RCTImage"
 
   s.dependency "React-Core/RCTImageHeaders", version
   s.dependency "React-RCTNetwork", version

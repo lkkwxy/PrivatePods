@@ -25,5 +25,5 @@ Pod::Spec.new do |s|
   s.platforms              = { :ios => "9.0", :tvos => "9.2" }
   s.source                 = source
   s.source_files           = "#{version}/react-native/ReactCommon/jsinspector/*.{cpp,h}"
-  s.header_dir             = '#{version}/react-native/ReactCommon/jsinspector'
+  s.header_dir             = 'jsinspector'
 end
