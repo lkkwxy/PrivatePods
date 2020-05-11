@@ -13,11 +13,6 @@ Pod::Spec.new do |spec|
 
   spec.prepare_command = <<-DESC
   #!/bin/bash
-  # Copyright (c) Facebook, Inc. and its affiliates.
-  #
-  # This source code is licensed under the MIT license found in the
-  # LICENSE file in the root directory of this source tree.
-
   set -e
 
   PLATFORM_NAME="${PLATFORM_NAME:-iphoneos}"
@@ -29,7 +24,7 @@ Pod::Spec.new do |spec|
 
       if [[ "$PLATFORM_NAME" == *"simulator"* ]]; then
           CURRENT_ARCH="x86_64"
-      else
+      else 
           CURRENT_ARCH="armv7"
       fi
   fi
@@ -69,17 +64,8 @@ Pod::Spec.new do |spec|
   #define PC_FROM_UCONTEXT uc_mcontext->__ss.__eip
   #endif
   EOF
-
-  # Prepare exported header include
-  EXPORTED_INCLUDE_DIR="exported/glog"
-  mkdir -p exported/glog
-  cp -f src/glog/log_severity.h "$EXPORTED_INCLUDE_DIR/"
-  cp -f src/glog/logging.h "$EXPORTED_INCLUDE_DIR/"
-  cp -f src/glog/raw_logging.h "$EXPORTED_INCLUDE_DIR/"
-  cp -f src/glog/stl_logging.h "$EXPORTED_INCLUDE_DIR/"
-  cp -f src/glog/vlog_is_on.h "$EXPORTED_INCLUDE_DIR/"
-
   DESC
+
   spec.source = { :git => 'https://github.com/google/glog.git',
                   :tag => "v#{spec.version}" }
   spec.module_name = 'glog'
